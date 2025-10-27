@@ -30,9 +30,7 @@ public class Game {
         List<String> cars = new ArrayList<>(
                 Arrays.asList(readLine.trim().split("\\s*,\\s*"))
         );
-
-        // validator 검사
-
+        validator.isNameValidated(cars);
         return cars;
     }
 
@@ -46,7 +44,7 @@ public class Game {
         Validator validator = new Validator();
 
         String times = Console.readLine();
-        // validator 검사
+        validator.isTimeValidated(times);
         this.playTimes = Integer.parseInt(times);
     }
 
