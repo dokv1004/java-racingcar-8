@@ -23,6 +23,7 @@ public class Car {
         if (num >= 4) {
             position++;
         }
+        printPosition();
     }
 
     public void printPosition() {
